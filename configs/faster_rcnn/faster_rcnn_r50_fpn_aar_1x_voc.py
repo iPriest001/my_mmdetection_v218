@@ -8,7 +8,6 @@ model = dict(
         type='FPN_AAR1',
         in_channels=[256, 512, 1024, 2048],
         out_channels=256,
-        start_level=1,
         add_extra_convs='on_output',
         extra_convs_on_inputs=True,  # use P5
         num_outs=5),
